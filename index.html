@@ -21,7 +21,6 @@
 <link rel="stylesheet" href="css/main.css">
 
 </head>
-<script src="js/script.js"></script>
 
 
 <body class="bodyy1">
@@ -37,17 +36,29 @@
 
 
 <div class="col-3">
-<img class="choice" src="img/paper.png">
+<img class="choice" id="userimg"src="img/question.png">
 </img>
 </div>
 
+
 <div class="col-6">
-<h1 class="size4"id="outcome">0 : 1</h1>
+
+<div class="row justify-content-center">
+<h1 class="size4"id="outcome">0 : 0</h1>
+</div>
+
+<div class="row justify-content-center ">
+<div class="col-6">
+<h1 id="wl" class="text1">(result)</h1>
+</div>
+
+
+</div>
 </div>
 
 
 <div class="col-3">
-<img class="choice" src="img/sis.png">
+<img class="choice" id="compimg" src="img/question.png">
 </img>
 </div>
 
@@ -57,18 +68,18 @@
 
 
 <div class="row text-center boddy2 border-bottom border-top border-color align-items-center center3">
-<div class="col-3"><h1 class="text1">Your Turn:</h1></div>
+<div class="col-3"><h1 class="text1" id="usin">Your Roll</h1></div>
 <div class="col-6"></div>
-<div class="col-3"><h1 class="text1">Computers Turn:</h1></div>
+<div class="col-3"><h1 class="text1" id="coin">Computers Roll</h1></div>
 </div>
 
 
 
 <div class="row align-items-center text-center filler2">
 <div class="col-3"></div>
-<div class="col-2"><button class="button-50" role="button">Rock</button></div>
-<div class="col-2"><button class="button-50" role="button">Paper</button></div>
-<div class="col-2"><button class="button-50" role="button">Scissors </button></div>
+<div class="col-2"><button id="zero" class="button-50" role="button">Rock</button></div>
+<div class="col-2"><button id="one" class="button-50" role="button">Paper</button></div>
+<div class="col-2"><button id="two" class="button-50" role="button">Scissors </button></div>
 <div class="col-3"></div>
 </div>
 
@@ -80,16 +91,23 @@
 
 
 
-<div class="row">
+<div class="row align-items-center">
 <div class="col-1">
 <img class="help" src="img/question.png">
 </img>
 
 </div>
 <div class="col-5 align-items-center center3"><h3 class="helptag"> To start the Game click one of the buttons located in the center of the screen. Your Score is located at the top of the page.</h3></div>
-<div class="col-6"></div>
+<div class="col-4"></div>
+<div class="col-1">
+
+<button class="button-50" onClick="window.location.reload();" role="button">Reset Game</button>
+
+</div>
 </div>
 
 </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
